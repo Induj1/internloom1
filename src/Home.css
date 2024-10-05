@@ -1,0 +1,61 @@
+/* Home.css */
+.home-container {
+    padding: 50px; /* Adjust padding if needed */
+    text-align: center;
+    position: relative; /* Maintain relative positioning for content */
+  }
+  
+  .home-header {
+    position: fixed; /* Fix the header to the top of the viewport */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    z-index: 100; /* Ensure it's above other content */
+  }
+  
+  .home-logo {
+    width: 100px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  h1 {
+    font-size: 3.5em;
+    margin-top: 80px; /* Space below the fixed header */
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  }
+  
+  .card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 30px;
+  }
+  
+  .card {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 40px;
+    width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);
+  }
+  
+  .card h2 {
+    font-size: 2em;
+    color: #ffeb3b;
+  }
+  
+  .card p {
+    font-size: 1.1em;
+    color: #cccccc;
+  }
+  

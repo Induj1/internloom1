@@ -1,0 +1,90 @@
+/* Internships.css */
+/* Internships.css */
+.internships-container {
+  padding-top: 100px; /* Increase this value to ensure content is below navbar */
+  max-width: 1200px; /* Centered container */
+  margin: 0 auto; /* Center the container */
+  text-align: center; /* Center the title */
+}
+
+h1 {
+  font-size: 3em; /* Larger heading size */
+  margin-bottom: 20px; /* Space below heading */
+  color: #ffeb3b; /* Bright title color */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+/* ... Rest of the CSS remains unchanged ... */
+
+.internship-cards-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  justify-content: space-between; /* Space between cards */
+  gap: 30px; /* Space between cards */
+}
+
+.internship-card {
+  background-color: #1e1e1e; /* Darker card background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 20px; /* Padding inside the card */
+  width: calc(24% - 20px); /* Set to about 24% to fit 4 cards with margin */
+  transition: transform 0.3s, box-shadow 0.3s; /* Animation for hover effect */
+  text-align: center; /* Center text inside cards */
+  overflow: hidden; /* Hide overflow */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+}
+
+.internship-card:hover {
+  transform: translateY(-10px); /* Lift effect on hover */
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6); /* Increase shadow on hover */
+}
+
+.internship-image {
+  width: 100%; /* Responsive image */
+  height: 150px; /* Adjusted height for images */
+  object-fit: cover; /* Cover to maintain aspect ratio */
+  border-radius: 10px; /* Rounded corners for image */
+  transition: transform 0.3s; /* Transition for image scaling */
+}
+
+.internship-card:hover .internship-image {
+  transform: scale(1.05); /* Enlarge image on hover */
+}
+
+/* Button Styles */
+.register-button {
+  background-color: #ffeb3b; /* Bright button color */
+  color: #1e1e1e; /* Dark button text */
+  border: none; /* No border */
+  border-radius: 25px; /* Rounded corners for button */
+  padding: 12px 25px; /* Padding for button */
+  cursor: pointer; /* Pointer cursor on hover */
+  margin-top: 15px; /* Space above the button */
+  transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+  font-weight: bold; /* Bold button text */
+  font-size: 16px; /* Increase font size */
+}
+
+.register-button:hover {
+  background-color: #ffc107; /* Darker yellow on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .internship-card {
+      width: calc(33.333% - 30px); /* Three cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .internship-card {
+      width: calc(50% - 30px); /* Two cards per row */
+  }
+}
+
+@media (max-width: 480px) {
+  .internship-card {
+      width: calc(100% - 30px); /* One card per row */
+  }
+}
